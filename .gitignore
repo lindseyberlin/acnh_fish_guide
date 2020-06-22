@@ -1,6 +1,9 @@
 # Data files
 data/
 
+# Ignored image files
+ignored-images/
+
 # Mac DS_Store
 .DS_Store
 
