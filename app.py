@@ -10,7 +10,7 @@ now = datetime.now()
 now_month = now.month
 now_hour = now.hour
 
-st.markdown('# Tell me about your game:')
+st.header('Tell me about your game:')
 
 hems = ['Northern', 'Southern']
 hem_key = st.selectbox('Which hemisphere are you in?', options=hems, index=0)
@@ -62,8 +62,10 @@ time_names = {
 hours = list(time_names.keys())
 hour_key = st.selectbox('What time is it?', options = hours, index = now_hour)
 
-st.write(f'Showing currently active fish for:')
+st.subheader(f'Showing currently active fish for:')
 st.write(f'{hem_key} hemisphere, in {month_key}, at some time between {hour_key}')
+
+st.write("Percentages show the likelihood that a shadow of the specified size will be that fish.")
 
 fish_df = pd.read_csv('data/fish_clean.csv')
 
@@ -77,6 +79,15 @@ current = utils.show_current_fish(fish_df, hem_arg, mon_arg, col_name, current_t
 
 current_locs = utils.find_current_locs(current)
 
+shadow_order = ['X-Small',
+                'Small',
+                'Medium',
+                'Long',
+                'Large',
+                'Fin',
+                'X-Large',
+                'XX-Large']
+
 for loc in current_locs:
     if loc[0] != loc[1]:
         title = f"{loc[0].title()}: {loc[1].title()}"
@@ -89,5 +100,19 @@ for loc in current_locs:
         loc_current = current.loc[(current['where'] == loc[0]) & (
             current['where_sub'] == loc[0])]
     st.subheader(f"{title}")
-    st.dataframe(loc_current[['name', 'sell', 'shadow']], height=2000)
+    for size in shadow_order:
+        size_sub = loc_current.loc[loc_current['shadow'] == size]
+
+        num_size = len(size_sub)
+        if num_size == 0:
+            continue
+
+        sub_percs = utils.find_minmax_perc(size_sub)
+        st.markdown(f"**{num_size} {size} Fish:**")
+
+        #st.dataframe(sub_percs[['name', 'sell', 'min_perc', 'max_perc']])
+
+        for i in sub_percs.index:
+            st.write(f"{sub_percs['name'][i].title()}: {sub_percs['sell'][i]} bells ({sub_percs['min_perc'][i]:.1%} - {sub_percs['max_perc'][i]:.1%})")
+
 
