@@ -2,9 +2,11 @@
 
 I've always wondered something as I've played Animal Crossing games - if you are fishing to make money, is it better to fish along the river or at the ocean? How does that change based on month, time of day, weather, etc? This analysis project aims to find out, and to output findings in an accessible web app for other people.
 
+Link to web app: https://acnh-fish-viewer.herokuapp.com/
+
 ## Goal
 
-Create a web app where users can input their hemisphere, the month, the time of day, and the weather, and get an easily-understandable and visual explanation of available fish - highlighting where the best spot to fish would be!
+Create a web app where users can input their hemisphere, month, and time of day (and, someday, whether it's raining) and get an easily-understandable and visual explanation of available fish - highlighting where the best spot to fish would be!
 
 ### Data
 
