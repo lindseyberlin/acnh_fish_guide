@@ -10,10 +10,10 @@ now = datetime.now()
 now_month = now.month
 now_hour = now.hour
 
-st.sidebar.markdown('# Tell me about your game:')
+st.markdown('# Tell me about your game:')
 
 hems = ['Northern', 'Southern']
-hem_key = st.sidebar.selectbox('Which hemisphere are you in?', options=hems, index=0)
+hem_key = st.selectbox('Which hemisphere are you in?', options=hems, index=0)
 
 month_names = {
     'January' : 1, 
@@ -30,7 +30,7 @@ month_names = {
     'December': 12
     }
 months = list(month_names.keys())
-month_key = st.sidebar.selectbox('Which month is it?', options=months, index = now_month -1)
+month_key = st.selectbox('Which month is it?', options=months, index = now_month -1)
 
 time_names = {
     'Midnight - 12:59AM' : 0,
@@ -60,7 +60,7 @@ time_names = {
 }
 
 hours = list(time_names.keys())
-hour_key = st.sidebar.selectbox('What time is it?', options = hours, index = now_hour)
+hour_key = st.selectbox('What time is it?', options = hours, index = now_hour)
 
 st.write(f'Showing currently active fish for:')
 st.write(f'{hem_key} hemisphere, in {month_key}, at some time between {hour_key}')
