@@ -7,6 +7,9 @@ ignored-images/
 # Mac DS_Store
 .DS_Store
 
+# Some VS folder
+.vscode/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
