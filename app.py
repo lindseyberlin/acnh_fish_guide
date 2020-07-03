@@ -8,7 +8,7 @@ st.title('Hello, Fish!')
 
 now = datetime.now()
 now_month = now.month
-now_hour = now.hour
+now_hour = now.hour - 5
 
 st.header('Tell me about your game:')
 
@@ -107,12 +107,26 @@ for loc in current_locs:
         if num_size == 0:
             continue
 
-        sub_percs = utils.find_minmax_perc(size_sub)
-        st.markdown(f"**{num_size} {size} Fish:**")
+        max_price = size_sub['sell'].max()
 
-        #st.dataframe(sub_percs[['name', 'sell', 'min_perc', 'max_perc']])
+        sub_percs = utils.find_minmax_perc(size_sub)
+        st.markdown(f"**{num_size} {size} Fish:** (Max: {max_price:,} bells)")
 
         for i in sub_percs.index:
-            st.write(f"{sub_percs['name'][i].title()}: {sub_percs['sell'][i]} bells ({sub_percs['min_perc'][i]:.1%} - {sub_percs['max_perc'][i]:.1%})")
+            # Later code to add fish images if I can make them look nicer
+            # fish_icon = utils.find_fish_icon(sub_percs['name'][i])
+            # path = 'images/'
+            # st.image(path + fish_icon + '.png')
+            st.write(f"{sub_percs['name'][i].title()}: {sub_percs['sell'][i]:,} bells ({sub_percs['min_perc'][i]:.1%} - {sub_percs['max_perc'][i]:.1%})")
 
+st.subheader("Size Reference:")
+st.image('images/fish-sizes-gamestop.png', use_column_width=True)
+st.markdown('###### Image from [GameSpot](https://www.gamespot.com/articles/animal-crossing-new-horizons-fish-guide-how-to-cat/1100-6474887/)')
 
+st.subheader("Please note!")
+st.write("Some species will not spawn on your island until you have caught a certain number of fish, but all fish will spawn if you've caught more than 100 fish. You can check your total lifetime catch number looking at the Nook Miles achievement 'Angling for Perfection!'")
+
+st.subheader('Contact')
+st.markdown('Have an issue or suggestion? Go to the [GitHub Repository](https://github.com/lindseyberlin/acnh_fish_guide) for this app to open an issue.')
+st.markdown('Questions? Ask me on [Twitter](https://twitter.com/Lindsey_Dev).')
+st.markdown('Data sourced from the [Community Data Spreadsheet](https://tinyurl.com/acnh-sheet).')
