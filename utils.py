@@ -154,11 +154,11 @@ def find_minmax_perc(sub_group):
         # subtracting relevant row
         min_else = sub_group['min_spawn'].sum() - i_min
         max_else = sub_group['max_spawn'].sum() - i_max
-        
+
         # Finding min and max percentages
         sub_group.at[i, 'min_perc'] = i_min / (max_else + i_min)
         sub_group.at[i, 'max_perc'] = i_max / (min_else + i_max)
-
+        
     return sub_group
 
 def find_fish_icon(fish_name):

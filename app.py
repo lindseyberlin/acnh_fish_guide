@@ -1,19 +1,21 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from datetime import datetime
+import datetime
+import pytz
 import utils as utils
 
 st.title('Hello, Fish!')
 
-now = datetime.now()
-now_month = now.month
-now_hour = now.hour
+now = datetime.datetime.now()
+ct_now = pytz.timezone("America/Chicago").localize(now)
+now_month = ct_now.month
+now_hour = ct_now.hour
 
 st.header('Tell me about your game:')
 
 hems = ['Northern', 'Southern']
-hem_key = st.selectbox('Which hemisphere are you in?', options=hems, index=0)
+hem_key = st.radio('Which hemisphere are you in?', options=hems, index=0)
 
 month_names = {
     'January' : 1, 
@@ -44,7 +46,7 @@ time_names = {
     '8:00AM - 8:59AM' : 8,
     '9:00AM - 9:59AM' : 9,
     '10:00AM - 10:59AM' : 10,
-    '11:00AM - 11:59AM:' : 11,
+    '11:00AM - 11:59AM' : 11,
     'Noon - 12:59PM' : 12,
     '1:00PM - 1:59PM' : 13,
     '2:00PM - 2:59PM' : 14,
