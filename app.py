@@ -8,7 +8,7 @@ st.title('Hello, Fish!')
 
 now = datetime.now()
 now_month = now.month
-now_hour = now.hour - 5
+now_hour = now.hour
 
 st.header('Tell me about your game:')
 
