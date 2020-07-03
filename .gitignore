@@ -1,5 +1,5 @@
-# Data files
-data/
+# Ignored data files
+ignored-data/
 
 # Ignored image files
 ignored-images/
