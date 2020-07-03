@@ -64,11 +64,6 @@ time_names = {
 hours = list(time_names.keys())
 hour_key = st.selectbox('What time is it?', options = hours, index = now_hour)
 
-st.subheader(f'Showing currently active fish for:')
-st.write(f'{hem_key} hemisphere, in {month_key}, at some time between {hour_key}')
-
-st.write("Percentages show the likelihood that a shadow of the specified size will be that fish.")
-
 fish_df = pd.read_csv('data/fish_clean.csv')
 
 hem_arg = hem_key[0].lower() + "h"
@@ -81,6 +76,23 @@ current = utils.show_current_fish(fish_df, hem_arg, mon_arg, col_name, current_t
 
 current_locs = utils.find_current_locs(current)
 
+loc_title_dict = {}
+for loc in current_locs:
+    if loc[0] != loc[1]:
+        title = f"{loc[0].title()}: {loc[1].title()}"
+    else:
+        title = loc[0].title()
+    loc_title_dict[title] = loc
+
+loc_titles = list(loc_title_dict.keys())
+
+loc_key = st.selectbox('Which location would you like to see?', options=loc_titles)
+
+st.subheader(f'Showing currently active fish for the {loc_key}')
+st.write(f'{hem_key} hemisphere, {month_key}, some time between {hour_key}')
+
+st.markdown("_Percentages show a rough likelihood that a shadow of the specified size will be that fish._")
+
 shadow_order = ['X-Small',
                 'Small',
                 'Medium',
@@ -90,36 +102,40 @@ shadow_order = ['X-Small',
                 'X-Large',
                 'XX-Large']
 
-for loc in current_locs:
-    if loc[0] != loc[1]:
-        title = f"{loc[0].title()}: {loc[1].title()}"
-        spec_loc = current.loc[current['where_sub'] == loc[1]]
-        rest_loc = current.loc[(current['where'] == loc[0]) & (
-            current['where_sub'] == loc[0])]
-        loc_current = pd.concat([spec_loc, rest_loc])
-    else:
-        title = loc[0].title()
-        loc_current = current.loc[(current['where'] == loc[0]) & (
-            current['where_sub'] == loc[0])]
-    st.subheader(f"{title}")
-    for size in shadow_order:
-        size_sub = loc_current.loc[loc_current['shadow'] == size]
 
-        num_size = len(size_sub)
-        if num_size == 0:
-            continue
+loc = loc_title_dict[loc_key]
+if loc[0] != loc[1]:
+    spec_loc = current.loc[current['where_sub'] == loc[1]]
+    rest_loc = current.loc[(current['where'] == loc[0]) & (
+        current['where_sub'] == loc[0])]
+    loc_current = pd.concat([spec_loc, rest_loc])
+else:
+    loc_current = current.loc[(current['where'] == loc[0]) & (
+        current['where_sub'] == loc[0])]
 
-        max_price = size_sub['sell'].max()
+for size in shadow_order:
+    size_sub = loc_current.loc[loc_current['shadow'] == size]
 
-        sub_percs = utils.find_minmax_perc(size_sub)
-        st.markdown(f"**{num_size} {size} Fish:** (Max: {max_price:,} bells)")
+    num_size = len(size_sub)
+    if num_size == 0:
+        continue
 
-        for i in sub_percs.index:
-            # Later code to add fish images if I can make them look nicer
-            # fish_icon = utils.find_fish_icon(sub_percs['name'][i])
-            # path = 'images/'
-            # st.image(path + fish_icon + '.png')
-            st.write(f"{sub_percs['name'][i].title()}: {sub_percs['sell'][i]:,} bells ({sub_percs['min_perc'][i]:.1%} - {sub_percs['max_perc'][i]:.1%})")
+    max_price = size_sub['sell'].max()
+
+    sub_percs = utils.find_minmax_perc(size_sub)
+    st.markdown(f"**{num_size} {size} Fish:** (Max: {max_price:,} bells)")
+
+    image_capt_dict = {}
+
+    for i in sub_percs.index:
+        # Later code to add fish images if I can make them look nicer
+        fish_icon = utils.find_fish_icon(sub_percs['name'][i])
+        path = 'images/'
+        image_loc = f"{path}{fish_icon}.png"
+        caption = f"{sub_percs['name'][i].title()}: {sub_percs['sell'][i]:,} bells ({sub_percs['min_perc'][i]:.1%} - {sub_percs['max_perc'][i]:.1%})"
+        image_capt_dict[image_loc] = caption
+    
+    st.image(list(image_capt_dict.keys()), caption=list(image_capt_dict.values()), width=100)
 
 st.subheader("Size Reference:")
 st.image('images/fish-sizes-gamestop.png', use_column_width=True)
