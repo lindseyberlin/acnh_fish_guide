@@ -1,0 +1,81 @@
+name,sell,weather,spawn_rates,nh_jan,nh_feb,nh_mar,nh_apr,nh_may,nh_jun,nh_jul,nh_aug,nh_sep,nh_oct,nh_nov,nh_dec,sh_jan,sh_feb,sh_mar,sh_apr,sh_may,sh_jun,sh_jul,sh_aug,sh_sep,sh_oct,sh_nov,sh_dec,time,where,how
+Agrias Butterfly,3000,not rain,5,False,False,False,True,True,True,True,True,True,False,False,False,True,True,True,False,False,False,False,False,False,True,True,True,8a-5p,flowers,flying near flowers
+Ant,80,any,0,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,all,other,on rotten turnips
+Atlas Moth,3000,any,5,False,False,False,True,True,True,True,True,True,False,False,False,True,True,True,False,False,False,False,False,False,True,True,True,7p-4a,trees,on trees (any kind)
+Bagworm,600,any,50,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,all,trees,shake trees (hardwood or cedar)
+Banded Dragonfly,4500,not rain,7,False,False,False,False,True,True,True,True,True,True,False,False,True,True,True,True,False,False,False,False,False,False,True,True,8a-5p,water,flying near water
+Bell Cricket,430,not rain,60,False,False,False,False,False,False,False,False,True,True,False,False,False,False,True,True,False,False,False,False,False,False,False,False,5p-8a,other,on ground
+Blue Weevil Beetle,800,any,2,False,False,False,False,False,False,True,True,False,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,all,trees,on palm trees
+Brown Cicada,250,any,70,False,False,False,False,False,False,True,True,False,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,8a-5p,trees,on trees (hardwood or cedar)
+Centipede,300,any,30,True,True,True,True,True,True,False,False,True,True,True,True,False,False,True,True,True,True,True,True,True,True,True,True,4p-11a,other,hit rocks
+Cicada Shell,10,any,1,False,False,False,False,False,False,True,True,False,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,all,trees,on trees (hardwood or cedar)
+Citrus Long-horned Beetle,350,not rain,10,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,all,trees,on tree stumps
+Common Bluebottle,300,not rain,70,False,False,False,True,True,True,True,True,False,False,False,False,True,True,False,False,False,False,False,False,False,True,True,True,4a-7p,other,flying
+Common Butterfly,160,not rain,60,True,True,True,True,True,True,False,False,True,True,True,True,False,False,True,True,True,True,True,True,True,True,True,True,4a-7p,other,flying
+Cricket,130,not rain,60,False,False,False,False,False,False,False,False,True,True,True,False,False,False,True,True,True,False,False,False,False,False,False,False,5p-8a,other,on ground
+Cyclommatus Stag,8000,any,2,False,False,False,False,False,False,True,True,False,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,5p-8a,trees,on palm trees
+Damselfly,500,not rain,60,True,True,False,False,False,False,False,False,False,False,True,True,False,False,False,False,True,True,True,True,False,False,False,False,all,water,flying near water
+Darner Dragonfly,230,not rain,40,False,False,False,True,True,True,True,True,True,True,False,False,True,True,True,True,False,False,False,False,False,True,True,True,8a-5p,water,flying near water
+Diving Beetle,800,any,10,False,False,False,False,True,True,True,True,True,False,False,False,True,True,True,False,False,False,False,False,False,False,True,True,8a-7p,water,on rivers or ponds
+Drone Beetle,200,any,40,False,False,False,False,False,True,True,True,False,False,False,False,True,True,False,False,False,False,False,False,False,False,False,True,all,trees,on trees (any kind)
+Dung Beetle,3000,any,10,True,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,True,True,True,False,False,False,False,all,other,on ground (pushing snowballs)
+Earth-boring Dung Beetle,300,any,30,False,False,False,False,False,False,True,True,True,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,all,other,on ground
+Emperor Butterfly,4000,not rain,5,True,True,True,False,False,True,True,True,True,False,False,True,True,True,True,False,False,True,True,True,True,False,False,True,5p-8a,flowers,flying near flowers
+Evening Cicada,550,any,50,False,False,False,False,False,False,True,True,False,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,4a-8a-4p-7p,trees,on trees (hardwood or cedar)
+Firefly,300,not rain,200,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,7p-4a,water,flying near water
+Flea,70,any,5–10,False,False,False,True,True,True,True,True,True,True,True,False,True,True,True,True,True,False,False,False,False,True,True,True,all,other,on villagers
+Fly,60,any,0,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,all,other,flying near trash
+Giant Cicada,500,any,50,False,False,False,False,False,False,True,True,False,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,8a-5p,trees,on trees (hardwood or cedar)
+Giant Stag,10000,any,5,False,False,False,False,False,False,True,True,False,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,11p-8a,trees,on trees (any kind)
+Giant Water Bug,2000,any,5,False,False,False,True,True,True,True,True,True,False,False,False,True,True,True,False,False,False,False,False,False,True,True,True,7p-8a,water,on rivers or ponds
+Giraffe Stag,12000,any,1,False,False,False,False,False,False,True,True,False,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,5p-8a,trees,on palm trees
+Golden Stag,12000,any,1,False,False,False,False,False,False,True,True,False,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,5p-8a,trees,on palm trees
+Goliath Beetle,8000,any,2,False,False,False,False,False,True,True,True,True,False,False,False,True,True,True,False,False,False,False,False,False,False,False,True,5p-8a,trees,on palm trees
+Grasshopper,160,not rain,60,False,False,False,False,False,False,True,True,True,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,8a-5p,other,on ground
+Great Purple Emperor,3000,not rain,5,False,False,False,False,True,True,True,True,False,False,False,False,True,True,False,False,False,False,False,False,False,False,True,True,4a-7p,flowers,flying near flowers
+Hermit Crab,1000,any,25,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,7p-8a,water,disguised near sea
+Honeybee,200,not rain,30,False,False,True,True,True,True,True,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,True,True,8a-5p,flowers,flying near flowers
+Horned Atlas,8000,any,2,False,False,False,False,False,False,True,True,False,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,5p-8a,trees,on palm trees
+Horned Dynastid,1350,any,35,False,False,False,False,False,False,True,True,False,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,5p-8a,trees,on trees (any kind)
+Horned Elephant,8000,any,2,False,False,False,False,False,False,True,True,False,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,5p-8a,trees,on palm trees
+Horned Hercules,12000,any,1,False,False,False,False,False,False,True,True,False,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,5p-8a,trees,on palm trees
+Jewel Beetle,2400,not rain,5,False,False,False,True,True,True,True,True,False,False,False,False,True,True,False,False,False,False,False,False,False,True,True,True,all,trees,on tree stumps
+Ladybug,200,not rain,40,False,False,True,True,True,True,False,False,False,True,False,False,False,False,False,True,False,False,False,False,True,True,True,True,8a-5p,flowers,on flowers
+Long Locust,200,any,50,False,False,False,True,True,True,True,True,True,True,True,False,True,True,True,True,True,False,False,False,False,True,True,True,8a-7p,other,on ground
+Madagascan Sunset Moth,2500,not rain,5,False,False,False,True,True,True,True,True,True,False,False,False,True,True,True,False,False,False,False,False,False,True,True,True,8a-4p,flowers,flying near flowers
+Man-faced Stink Bug,1000,not rain,20,False,False,True,True,True,True,True,True,True,True,False,False,True,True,True,True,False,False,False,False,True,True,True,True,7p-8a,flowers,on flowers
+Mantis,430,not rain,30,False,False,True,True,True,True,True,True,True,True,True,False,True,True,True,True,True,False,False,False,True,True,True,True,8a-5p,flowers,on flowers
+Migratory Locust,600,any,10,False,False,False,False,False,False,False,True,True,True,True,False,False,True,True,True,True,False,False,False,False,False,False,False,8a-7p,other,on ground
+Miyama Stag,1000,any,35,False,False,False,False,False,False,True,True,False,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,all,trees,on trees (any kind)
+Mole Cricket,500,any,30,True,True,True,True,True,False,False,False,False,False,True,True,False,False,False,False,True,True,True,True,True,True,True,False,all,other,dig for noise
+Monarch Butterfly,140,not rain,70,False,False,False,False,False,False,False,False,True,True,True,False,False,False,True,True,True,False,False,False,False,False,False,False,4a-5p,flowers,flying near flowers
+Mosquito,130,not rain,50,False,False,False,False,False,True,True,True,True,False,False,False,True,True,True,False,False,False,False,False,False,False,False,True,5p-4a,other,flying
+Moth,130,not rain,25,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,7p-4a,other,flying near lights
+Orchid Mantis,2400,not rain,15,False,False,True,True,True,True,True,True,True,True,True,False,True,True,True,True,True,False,False,False,True,True,True,True,8a-5p,flowers,on flowers (white)
+Paper Kite Butterfly,1000,not rain,20,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,8a-7p,flowers,flying near flowers
+Peacock Butterfly,2500,not rain,5,False,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,True,True,4a-7p,flowers,"flying near flowers (purple, blue or black)"
+Pill Bug,250,any,50,True,True,True,True,True,True,False,False,True,True,True,True,False,False,True,True,True,True,True,True,True,True,True,True,11p-4p,other,hit rocks
+Pondskater,130,any,30,False,False,False,False,True,True,True,True,True,False,False,False,True,True,True,False,False,False,False,False,False,False,True,True,8a-7p,water,on rivers or ponds
+Queen Alexandra's Birdwing,4000,not rain,5,False,False,False,False,True,True,True,True,True,False,False,False,True,True,True,False,False,False,False,False,False,False,True,True,8a-4p,flowers,flying near flowers
+Rainbow Stag,6000,any,7,False,False,False,False,False,True,True,True,True,False,False,False,True,True,True,False,False,False,False,False,False,False,False,True,7p-8a,trees,on trees (any kind)
+Rajah Brooke's Birdwing,2500,not rain,5,True,True,False,True,True,True,True,True,True,False,False,True,True,True,True,False,False,True,True,True,False,True,True,True,8a-5p,flowers,flying near flowers
+Red Dragonfly,180,not rain,80,False,False,False,False,False,False,False,False,True,True,False,False,False,False,True,True,False,False,False,False,False,False,False,False,8a-7p,water,flying near water
+Rice Grasshopper,400,any,20,False,False,False,False,False,False,False,True,True,True,True,False,False,True,True,True,True,False,False,False,False,False,False,False,8a-7p,other,on ground
+Robust Cicada,300,any,70,False,False,False,False,False,False,True,True,False,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,8a-5p,trees,on trees (hardwood or cedar)
+Rosalia Batesi Beetle,3000,not rain,2,False,False,False,False,True,True,True,True,True,False,False,False,True,True,True,False,False,False,False,False,False,False,True,True,all,trees,on tree stumps
+Saw Stag,2000,any,20,False,False,False,False,False,False,True,True,False,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,all,trees,on trees (any kind)
+Scarab Beetle,10000,any,3,False,False,False,False,False,False,True,True,False,False,False,False,True,True,False,False,False,False,False,False,False,False,False,False,11p-8a,trees,on trees (any kind)
+Scorpion,8000,any,2,False,False,False,False,True,True,True,True,True,True,False,False,True,True,True,True,False,False,False,False,False,False,True,True,7p-4a,other,on ground
+Snail,250,rain,20,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,all,other,on rocks or bushes
+Spider,600,any,30,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,7p-8a,trees,shake trees (hardwood or cedar)
+Stinkbug,120,not rain,40,False,False,True,True,True,True,True,True,True,True,False,False,True,True,True,True,False,False,False,False,True,True,True,True,all,flowers,on flowers
+Tarantula,8000,any,2,True,True,True,True,False,False,False,False,False,False,True,True,False,False,False,False,True,True,True,True,True,True,False,False,7p-4a,other,on ground
+Tiger Beetle,1500,not rain,15,False,True,True,True,True,True,True,True,True,True,False,False,True,True,True,True,False,False,False,True,True,True,True,True,all,other,on ground
+Tiger Butterfly,240,not rain,40,False,False,True,True,True,True,True,True,True,False,False,False,True,True,True,False,False,False,False,False,True,True,True,True,4a-7p,other,flying
+Violin Beetle,450,not rain,10,False,False,False,False,True,True,False,False,True,True,True,False,False,False,True,True,True,False,False,False,False,False,True,True,all,trees,on tree stumps
+Walker Cicada,400,any,40,False,False,False,False,False,False,False,True,True,False,False,False,False,True,True,False,False,False,False,False,False,False,False,False,8a-5p,trees,on trees (hardwood or cedar)
+Walking Leaf,600,any,10,False,False,False,False,False,False,True,True,True,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,all,trees,disguised under trees
+Walking Stick,600,any,10,False,False,False,False,False,False,True,True,True,True,True,False,True,True,True,True,True,False,False,False,False,False,False,False,4a-8a-5p-7p,trees,on trees (any kind)
+Wasp,2500,any,0,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,all,trees,shake trees (any kind)
+Wharf Roach,200,any,20,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,all,water,on beach rocks
+Yellow Butterfly,160,not rain,60,False,False,True,True,True,True,False,False,True,True,False,False,False,False,True,True,False,False,False,False,True,True,True,True,4a-7p,other,flying

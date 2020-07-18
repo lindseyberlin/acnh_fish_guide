@@ -1,0 +1,41 @@
+name,sell,shadow,movement_speed,spawn_rates,nh_jan,nh_feb,nh_mar,nh_apr,nh_may,nh_jun,nh_jul,nh_aug,nh_sep,nh_oct,nh_nov,nh_dec,sh_jan,sh_feb,sh_mar,sh_apr,sh_may,sh_jun,sh_jul,sh_aug,sh_sep,sh_oct,sh_nov,sh_dec,time
+abalone,2000,Medium,Medium,1–6,True,False,False,False,False,True,True,True,True,True,True,True,True,True,True,True,True,True,True,False,False,False,False,True,4p-9a
+acorn barnacle,600,X-Small,Stationary,6–11,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,all
+chambered nautilus,1800,Medium,Medium,3–5,False,False,True,True,True,True,False,False,True,True,True,False,False,False,True,True,True,False,False,False,True,True,True,True,4p-9a
+Dungeness crab,1900,Medium,Medium,3–5,True,True,True,True,True,False,False,False,False,False,True,True,False,False,False,False,True,True,True,True,True,True,True,False,all
+firefly squid,1400,X-Small,Slow,6,False,False,True,True,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,True,True,9p-4a
+flatworm,700,X-Small,Very slow,5–8,False,False,False,False,False,False,False,True,True,False,False,False,False,True,True,False,False,False,False,False,False,False,False,False,4p-9a
+gazami crab,2200,Medium,Medium,2–5,False,False,False,False,False,True,True,True,True,True,True,False,True,True,True,True,True,False,False,False,False,False,False,True,all
+giant isopod,12000,Medium,Very fast,1,False,False,False,False,False,False,True,True,True,True,False,False,True,True,True,True,False,False,False,False,False,False,False,False,9a-4p-9p-4a
+gigas giant clam,15000,X-Large,Very fast,1,False,False,False,False,True,True,True,True,True,False,False,False,True,True,True,False,False,False,False,False,False,False,True,True,all
+horseshoe crab,2500,Medium,Medium,3–5,False,False,False,False,False,False,True,True,True,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,9p-4a
+lobster,4500,Large,Fast,1–2,True,False,False,True,True,True,False,False,False,False,False,True,False,False,False,False,False,True,True,False,False,True,True,True,all
+mantis shrimp,2500,Small,Medium,2–8,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,4p-9a
+moon jellyfish,600,Small,Very slow,4–12,False,False,False,False,False,False,True,True,True,False,False,False,True,True,True,False,False,False,False,False,False,False,False,False,all
+mussel,1500,Small,Slow,3–8,False,False,False,False,False,True,True,True,True,True,True,True,True,True,True,True,True,True,False,False,False,False,False,True,all
+octopus,1200,Medium,Slow,2–8,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,all
+oyster,1100,Small,Slow,5–12,True,True,False,False,False,False,False,False,True,True,True,True,False,False,True,True,True,True,True,True,False,False,False,False,all
+pearl oyster,2800,Small,Medium,2–4,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,all
+red king crab,8000,Large,Very fast,1–2,True,True,True,False,False,False,False,False,False,False,True,True,False,False,False,False,True,True,True,True,True,False,False,False,all
+scallop,1200,Medium,Slow,6–8,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,all
+sea anemone,500,Large,Stationary,3–14,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,all
+sea cucumber,500,Medium,Very slow,4–12,True,True,True,True,False,False,False,False,False,False,True,True,False,False,False,False,True,True,True,True,True,True,False,False,all
+sea grapes,900,Small,Stationary,4–12,False,False,False,False,False,True,True,True,True,False,False,False,True,True,True,False,False,False,False,False,False,False,False,True,all
+sea pig,10000,Small,Very fast,1,True,True,False,False,False,False,False,False,False,False,True,True,False,False,False,False,True,True,True,True,False,False,False,False,4p-9a
+sea pineapple,1500,Small,Slow,2–6,False,False,False,True,True,True,True,True,False,False,False,False,True,True,False,False,False,False,False,False,False,True,True,True,all
+sea slug,600,X-Small,Very slow,1–12,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,all
+sea star,500,Small,Very slow,4–10,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,all
+sea urchin,1700,Small,Slow,2–7,False,False,False,False,True,True,True,True,True,False,False,False,True,True,True,False,False,False,False,False,False,False,True,True,all
+seaweed,600,Large,Stationary,3–14,True,True,True,True,True,True,True,False,False,True,True,True,True,False,False,True,True,True,True,True,True,True,True,True,all
+slate pencil urchin,2000,Medium,Medium,3–4,False,False,False,False,True,True,True,True,True,False,False,False,True,True,True,False,False,False,False,False,False,False,True,True,4p-9a
+snow crab,6000,Large,Fast,1–3,True,True,True,True,False,False,False,False,False,False,True,True,False,False,False,False,True,True,True,True,True,True,False,False,all
+spider crab,12000,X-Large,Very fast,1–2,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False,all
+spiny lobster,5000,Large,Fast,5,False,False,False,False,False,False,False,False,False,True,True,True,False,False,False,True,True,True,False,False,False,False,False,False,9p-4a
+spotted garden eel,1100,Small,Slow,6–8,False,False,False,False,True,True,True,True,True,True,False,False,True,True,True,True,False,False,False,False,False,False,True,True,4a-9p
+sweet shrimp,1400,Small,Slow,3–12,True,True,False,False,False,False,False,False,True,True,True,True,False,False,True,True,True,True,True,True,False,False,False,False,4p-9a
+tiger prawn,3000,Small,Medium,1–4,False,False,False,False,False,True,True,True,True,False,False,False,True,True,True,False,False,False,False,False,False,False,False,True,4p-9a
+turban shell,1000,Small,Slow,2–10,False,False,True,True,True,False,False,False,True,True,True,True,False,False,True,True,True,True,False,False,True,True,True,False,all
+umbrella octopus,6000,Small,Fast,1–3,False,False,True,True,True,False,False,False,True,True,True,False,False,False,True,True,True,False,False,False,True,True,True,False,all
+vampire squid,10000,Medium,Very fast,1,False,False,False,False,True,True,True,True,False,False,False,False,True,True,False,False,False,False,False,False,False,False,True,True,4p-9a
+Venus' flower basket,5000,Medium,Fast,1–3,True,True,False,False,False,False,False,False,False,True,True,True,False,False,False,True,True,True,True,True,False,False,False,False,all
+whelk,1000,Small,Slow,1–8,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,all
