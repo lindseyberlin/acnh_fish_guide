@@ -4,11 +4,11 @@ import numpy as np
 import warnings
 warnings.filterwarnings('ignore')
 
-def subset_hem_month(data, hemisphere, month):
+def subset_fish(data, hemisphere, month):
     '''
     Inputs:
     data: pandas dataframe
-        should be a clean version, with lowercase col names etc.
+        needs to have where/where_sub and min/max spawn
     hemisphere: str
         either "sh" or "nh"
     month: str
@@ -19,9 +19,9 @@ def subset_hem_month(data, hemisphere, month):
         version of data with only fish that appear in that month 
         for that hemisphere
     '''
-    
-    cols = [c for c in data.columns if ("sh_" not in c) and ("nh_" not in c)]
-
+    cols = ['name', 'sell', 'shadow', 'spawn_rates',
+            'rain_snow_catch_up', 'where', 'where_sub',
+            'min_spawn', 'max_spawn']
     month_col = hemisphere + "_" + month
     cols.append(month_col)
 
@@ -35,7 +35,7 @@ def parse_times(monthdf, name_col):
     """
     Inputs:
     monthdf: pandas dataframe
-        output of subset_hem_month
+        output of subset_fish, based on hem and month
         
     name_col: string
         combo of hem and month, to match "hh_mmm" pattern
@@ -45,8 +45,27 @@ def parse_times(monthdf, name_col):
     concatdf: pandas dataframe
         monthdf plus additional columns to match hour data
     """
+                
+    # Defining availability times based on original values
+    avail_times = {
+        # 4am - 9pm, aka 4:00 - 21:00
+        '4 AM – 9 PM': list(range(4, 21)),
 
-    
+        # 9am - 4pm, aka 9:00 - 16:00
+        '9 AM –\xa04 PM': list(range(9, 16)),
+
+        # 4pm - 9am, aka 16:00 - 9:00
+        '4 PM –\xa09 AM': list(range(16, 24)) + list(range(0, 9)),
+
+        # 9pm - 4am, aka 21:00 - 4:00
+        '9 PM –\xa04 AM': list(range(21, 24)) + list(range(0, 4)),
+
+        # piranha: 9am - 4pm and 9pm - 4am
+        '9 AM –\xa04 PM; 9 PM – 4 AM': list(range(9, 16)) + list(range(21, 24)) + list(range(0, 4)),
+
+        # all day, functionally 0:00 - 24:00
+        'All day': list(range(0, 24)),
+    }
 
     # Creating a blank df for hours 0-23, to match the monthdf
     blank_df = pd.DataFrame(np.zeros(shape=(len(monthdf), 24), dtype='int'))
@@ -69,14 +88,14 @@ def subset_by_hour(concatdf, current_hour):
     """
     Inputs:
     concatdf: pandas dataframe
-        output of parse_times, showing creatures available for the hem/month
+        output of parse_times, showing fish available for the hem/month
         and including hour cols
     current_hour: int
         current hour in military time, between 0 and 23
 
     Output:
     current: pandas dataframe
-        subset of all creatures available at that hour
+        subset of all fish available at that hour
     """
     # Don't want all of those hour cols after this
     # So, finding all non_hour_cols ny the type of the col name
@@ -90,7 +109,7 @@ def show_current_fish(data, hemisphere, month, name_col, current_hour):
     '''
     Combines all details/subsets to show only currently active fish
     '''
-    monthdf = subset_hem_month(data, hemisphere, month)
+    monthdf = subset_fish(data, hemisphere, month)
     timedf = parse_times(monthdf, name_col)
     current = subset_by_hour(timedf, current_hour)
 
